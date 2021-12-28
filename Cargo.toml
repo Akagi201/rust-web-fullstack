@@ -1,2 +1,2 @@
 [workspace]
-members = ["raw-http-server/tcpclient", "raw-http-server/tcpserver", "my-redis", "raw-http-server/httpserver", "raw-http-server/http"]
+members = ["raw-http-server/tcpclient", "raw-http-server/tcpserver", "my-redis", "raw-http-server/httpserver", "raw-http-server/http", "actix-server/webservice"]

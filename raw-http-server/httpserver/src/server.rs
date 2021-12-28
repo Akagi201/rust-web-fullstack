@@ -13,10 +13,12 @@ impl<'a> Server<'a> {
     Server{socket_addr}
   }
 
+
   pub fn run(&self) {
     let connection_listener = TcpListener::bind(self.socket_addr).unwrap();
     println!("Running on {}", self.socket_addr);
 
+    #[allow(clippy::unused_io_amount)]
     for stream in connection_listener.incoming() {
       let mut stream = stream.unwrap();
       println!("Connection established");
